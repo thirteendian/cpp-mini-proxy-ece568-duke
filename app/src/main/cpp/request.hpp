@@ -8,6 +8,7 @@ class Request {
   RequestParse RequestParse;
 
  public:
+  Request();
 };
 
 #endif

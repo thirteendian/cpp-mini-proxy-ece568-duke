@@ -1,0 +1,11 @@
+#ifndef _REQUESTPARSE_HPP_
+#define _REQUESTPARSE_HPP_
+
+#include "app.hpp"
+
+class RequestParse {
+ private:
+  int x;
+};
+
+#endif

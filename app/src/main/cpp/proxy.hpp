@@ -3,4 +3,6 @@
 
 #include "app.hpp"
 
+class Proxy {};
+
 #endif _PROXY_HPP_

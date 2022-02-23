@@ -34,9 +34,10 @@ int main() {
   */
 
   Proxy Proxy;
+  cout << "BecomeDaemon() is running" << endl;
 
   Proxy.becomeDaemon();
-  cout << "BecomeDaemon() is running" << endl;
+
   while (true) {
     Server Server(PORT);  //PORT is 12345
   }

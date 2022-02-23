@@ -40,5 +40,8 @@ int main() {
 
   while (true) {
     Server Server(PORT);  //PORT is 12345
+    std::string ip;
+    int browser_fd = Server.acceptConnection(&ip);
   }
+  return 0;
 }

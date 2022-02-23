@@ -61,7 +61,7 @@ void Proxy::becomeDaemon() {
     exit(EXIT_SUCCESS);  //have left parent process
   }
 }
-
+/*
 std::string Proxy::getRequest() {
   const char * port = "12345";  //12345
   int server_fd;
@@ -111,9 +111,10 @@ std::string Proxy::generateSendMessage(std::string method,
   toSend = method + " " + path + " " + information;
   return toSend;
 }
-
+*/
+/*
 void Proxy::doGet(std::string toSend_str, std::string host_str, std::string port_str) {
-  /******************* Send to Server *******************/
+//send to server
   const char * toSend = toSend_str.c_str();
   const char * host = host_str.c_str();
   const char * port = port_str.c_str();
@@ -126,7 +127,7 @@ void Proxy::doGet(std::string toSend_str, std::string host_str, std::string port
 
   send(server_connect_fd, toSend, strlen(toSend), 0);
 
-  /***************** Receive from Server *****************/
+//receive from server
   //std::string response;
   while (1) {
     char buffer[65536] = {0};
@@ -152,3 +153,4 @@ void Proxy::doGet(std::string toSend_str, std::string host_str, std::string port
 
   close(server_connect_fd);
 }
+*/

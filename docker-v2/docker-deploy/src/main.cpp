@@ -1,5 +1,8 @@
+
 #include "proxy.hpp"
-#include "request.hpp"
+#include "socket.hpp"
+
+//#include "request.hpp"
 
 int main() {
   /*
@@ -32,4 +35,7 @@ int main() {
 
   Proxy Proxy;
   Proxy.becomeDaemon();
+  while (true) {
+    Server Server(PORT);  //PORT is 12345
+  }
 }
